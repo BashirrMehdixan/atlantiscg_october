@@ -1,3 +1,4 @@
+==
 <!DOCTYPE html>
 <html lang="az">
 
@@ -7,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ 'assets/images/fav.webp' | theme }}">
-    <title>Atlantis CG</title>
+    <title>{{ this.page.title }}</title>
 
     <!-- fontawesome css -->
     <link rel="stylesheet" href="{{ 'assets/css/plugins/fontawesome-5.css' | theme }}">
@@ -133,7 +134,7 @@
                                             <i class="fa-thin fa-location-dot"></i>
                                         </div>
                                         <p>
-                                            {{ ('Baku city, Binagadi district, Agasadig Garaybeyli street 31') }}
+                                            {{ ('Baku city, Binagadi district, Agasadig Garaybeyli street 31') | _  }}
                                         </p>
                                     </div>
                                     <div class="single-info">
@@ -165,29 +166,25 @@
                                                 <a class="nav-link" href="/">{{ ('home') | _ }}</a>
                                             </li>
                                             <li class="has-droupdown pages">
-                                                <a class="nav-link" href="#">{{ ('about us') | _}}</a>
+                                                <a class="nav-link" href="#">{{ ('about us') | _ }}</a>
                                                 <ul class="submenu inner-page">
                                                     <li>
                                                         <a href="{{ 'about/index' | page }}">{{ ('about') | _ }}</a>
                                                     </li>
                                                     <li>
-                                                        <a href="{{ 'quality-policy/index' }} | page">{{ ('quality
-                                                            policy') | _ }}</a>
+                                                        <a href="{{ 'quality-policy/index' | page }}">{{ ('quality policy') | _ }}</a>
                                                     </li>
                                                     <li>
-                                                        <a href="{{ 'labor-protection/index | page' }}">{{ ('labor
-                                                            protection') | _ }}</a>
+                                                        <a href="{{ 'labor-protection/index' | page }}">{{ ('labor protection') | _ }}</a>
                                                     </li>
                                                     <li>
-                                                        <a href="{{ 'ecology-protection/index' | page }}">{{ ('ecology
-                                                            protection') | _ }}</a>
+                                                        <a href="{{ 'ecology-protection/index' | page }}">{{ ('ecology protection') | _ }}</a>
                                                     </li>
                                                     <!-- <li>
                                                         <a href="">{{ ('management') }}</a>
                                                     </li> -->
                                                     <li>
-                                                        <a href="{{ 'documents/index' | page }}">{{ ('documents') | _
-                                                            }}</a>
+                                                        <a href="{{ 'documents/index' | page }}">{{ ('documents') | _ }}</a>
                                                     </li>
                                                     <li>
                                                 </ul>
@@ -196,22 +193,16 @@
                                                 <a class="nav-link" href="#">{{ ('services') | _ }}</a>
                                                 <ul class="submenu inner-page">
                                                     <li>
-                                                        <a href="{{ 'construction/index' | page }}">{{ ('construction')
-                                                            | _
-                                                            }}</a>
+                                                        <a href="{{ 'construction/index' | page }}">{{ ('construction') | _ }}</a>
                                                     </li>
                                                     <li>
-                                                        <a href="{{ 'design/index' | page }}">{{ ('design and
-                                                            architecture') | _
-                                                            }}</a>
+                                                        <a href="{{ 'design/index' | page }}">{{ ('design and architecture') | _ }}</a>
                                                     </li>
                                                     <li>
                                                         <a href="{{ 'repair/index' | page }}">{{ ('repair') | _ }}</a>
                                                     </li>
                                                     <li>
-                                                        <a href="{{ 'melioservice/index' | page }}">{{ ('melioservice')
-                                                            | _
-                                                            }}</a>
+                                                        <a href="{{ 'melioservice/index' | page }}">{{ ('melioservice') | _ }}</a>
                                                     </li>
                                                     <li>
                                                         <a href="{{ 'supply/index' | page }}">{{ ('supply') | _ }}</a>
@@ -223,9 +214,7 @@
                                                     }}</a>
                                             </li> -->
                                             <li>
-                                                <a class="nav-link" href="{{ 'contact/index' | page }}">{{ ('contact
-                                                    us') | _
-                                                    }}</a>
+                                                <a class="nav-link" href="{{ 'contact/index' | page }}">{{ ('contact us') | _ }}</a>
                                             </li>
                                             <!-- <button type="button" data-bs-toggle="modal"
                                                 data-bs-target="#priceoffer"
@@ -283,31 +272,28 @@
             <nav class="nav-main mainmenu-nav mt--30">
                 <ul class="mainmenu" id="mobile-menu-active">
                     <li>
-                        <a href="/" class="main">{{ ('home') }}</a>
+                        <a href="/" class="main">{{ ('home') | _ }}</a>
                     </li>
                     <li class="has-droupdown">
-                        <a href="#" class="main">{{ ('about us') }}</a>
+                        <a href="#" class="main">{{ ('about us') | _ }}</a>
                         <ul class="submenu">
                             <li>
-                                <a class="mobile-menu-link" href="">{{ ('about') }}</a>
+                                <a class="mobile-menu-link" href="{{ 'about/index' | page }}">{{ ('about') | _ }}</a>
                             </li>
                             <li>
-                                <a class="mobile-menu-link" href="">{{ ('quality policy')
-                                    }}</a>
+                                <a class="mobile-menu-link" href="{{ 'quality-policy/index' | page }}">{{ ('quality policy') | _ }}</a>
                             </li>
                             <li>
-                                <a class="mobile-menu-link" href="">{{ ('labor
-                                    protection') }}</a>
+                                <a class="mobile-menu-link" href="{{ 'labor-protection/index' | page }}">{{ ('labor protection') | _ }}</a>
                             </li>
                             <li>
-                                <a class="mobile-menu-link" href="">{{ ('ecology
-                                    protection') }}</a>
+                                <a class="mobile-menu-link" href="{{ 'ecology-protection/index' | page }}">{{ ('ecology protection') | _ }}</a>
                             </li>
                             <!-- <li>
                                 <a class="mobile-menu-link" href="">{{ ('management') }}</a>
                             </li> -->
                             <li>
-                                <a class="mobile-menu-link" href="">{{ ('documents') }}</a>
+                                <a class="mobile-menu-link" href="{{ 'documents/index' | page }}">{{ ('documents') | _ }}</a>
                             </li>
                         </ul>
                     </li>
@@ -315,30 +301,27 @@
                         <a href="#" class="main">{{ ('services') }}</a>
                         <ul class="submenu">
                             <li>
-                                <a href="" class="mobile-menu-link">{{ ('construction')
-                                    }}</a>
+                                <a href="{{ 'construction/index' | page }}" class="mobile-menu-link">{{ ('construction') | _ }}</a>
                             </li>
                             <li>
-                                <a class="mobile-menu-link" href="">{{ ('design and
-                                    architecture') }}</a>
+                                <a class="mobile-menu-link" href="{{ 'design/index' | page }}">{{ ('design and architecture') | _ }}</a>
                             </li>
                             <li>
-                                <a class="mobile-menu-link" href="">{{ ('repair') }}</a>
+                                <a class="mobile-menu-link" href="{{ 'repair/index' | page }}">{{ ('repair') | _ }}</a>
                             </li>
                             <li>
-                                <a class="mobile-menu-link" href="">{{ ('melioservice')
-                                    }}</a>
+                                <a class="mobile-menu-link" href="{{ 'melioservice/index' | page }}">{{ ('melioservice') | _ }}</a>
                             </li>
                             <li>
-                                <a class="mobile-menu-link" href="">{{ ('supply') }}</a>
+                                <a class="mobile-menu-link" href="{{ 'supply/index' | page }}">{{ ('supply') | _ }}</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="" class="main">{{ ('projects') }}</a>
+                        <a href="{{ 'projects/index' | page }}" class="main">{{ ('projects') | _ }}</a>
                     </li>
                     <li>
-                        <a href="" class="main">{{ ('contact us') }}</a>
+                        <a href="{{ 'contact/index' | page }}" class="main">{{ ('contact us') | _ }}</a>
                     </li>
                 </ul>
             </nav>
@@ -442,28 +425,28 @@
                         data-sal-duration="800">
                         <div class="body">
                             <h6 class="footer-title">
-                                {{ ('useful links') }}
+                                {{ ('useful links') | _ }}
                             </h6>
                             <div class="use-full-link-wrapper">
-                                <a href="" class="single">
+                                <a href="{{ 'about/index' | page }}" class="single">
                                     <i class="fa-sharp fa-solid fa-right"></i>
-                                    {{ ('about') }}
+                                    {{ ('about') | _ }}
                                 </a>
                                 <!-- <a href="" class="single">
                                     <i class="fa-sharp fa-solid fa-right"></i>
                                     {{ ('management') }}
                                 </a> -->
-                                <a href="" class="single">
+                                <a href="{{ 'construction/index' | page }}" class="single">
                                     <i class="fa-sharp fa-solid fa-right"></i>
-                                    {{ ('construction') }}
+                                    {{ ('construction') | _ }}
                                 </a>
-                                <a href="" class="single">
+                                <a href="{{ 'supply/index' | page }}" class="single">
                                     <i class="fa-sharp fa-solid fa-right"></i>
-                                    {{ ('supply') }}
+                                    {{ ('supply') | _ }}
                                 </a>
-                                <a href="" class="single">
+                                <a href="{{ 'contact/index' | page }}" class="single">
                                     <i class="fa-sharp fa-solid fa-right"></i>
-                                    {{ ('contact us') }}
+                                    {{ ('contact us') | _ }}
                                 </a>
                             </div>
                         </div>
@@ -472,7 +455,7 @@
                         data-sal-duration="800">
                         <div class="body">
                             <h6 class="footer-title">
-                                {{ ('contact us') }}
+                                {{ ('contact us') | _ }}
                             </h6>
                             <div class="contactus-link-wrapper">
                                 <div class="single">
@@ -504,9 +487,8 @@
                                     <div class="icon">
                                         <i class="fa-light fa-location-dot"></i>
                                     </div>
-                                    <a href="https://goo.gl/maps/maGQt9rTsmcHBNaP6" target="_blank"
-                                        class="number mt-dec">
-                                        {{ ('Baku city, Binagadi district, Agasadig Garaybeyli street 31') }}
+                                    <a href="https://goo.gl/maps/maGQt9rTsmcHBNaP6" target="_blank" class="number mt-dec">
+                                        {{ ('Baku city, Binagadi district, Agasadig Garaybeyli street 31') | _ }}
                                     </a>
                                 </div>
                             </div>
@@ -520,7 +502,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="wrapepr">
-                            <p>{{ ("© 2023 \"Atlantis CG\" LLC. All rights reserved.") }}</p>
+                            <p>{{ ("© 2023 \"Atlantis CG\" LLC. All rights reserved.") | _ }}</p>
                             <p>
                                 Veb sayt <a href='https://in4tech.az/az/' target='_blank'
                                     class='text-decoration-underline'>In4Tech LLC</a> tərəfindən hazırlanıb.
