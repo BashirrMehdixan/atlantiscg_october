@@ -1,4 +1,574 @@
-url = "/about/index"
+url = "/about"
 layout = "main"
 title = "About"
 ==
+<!-- Bread-Crumb style two -->
+<!-- rts breadcrumba area start -->
+<div class="rts-bread-crumb-area ptb--150 ptb_sm--100 bg-breadcrumb bg_image">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- bread crumb inner wrapper -->
+                <div class="breadcrumb-inner text-center">
+                    <h1 class="title">{{ ('about') | _ }}</h1>
+                    <div class="meta">
+
+                    </div>
+                </div>
+                <!-- bread crumb inner wrapper end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- rts breadcrumba area end -->
+<!-- Bread-Crumb style two End -->
+
+<!-- rts about area start -->
+<div class="rts-about-area-about rts-section-gap">
+    <div class="container pb--45 plr_sm--15">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="thumbnail-area-about">
+                    <img src="{{ 'assets/images/about/04.webp' | theme }}" alt="about-area">
+                    <img src="{{ 'assets/images/about/05.webp' | theme }}" alt="about-sm" class="small">
+                    <button class="rts-btn btn-primary">Atlantis CG</button>
+                </div>
+            </div>
+            <div class="col-lg-7 about-a-p-cont">
+                <div class="about-inner-wrapper-inner">
+                    <div class="title-three-left">
+                        <!-- <span class="pre-title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="800"
+                            style="display: block;">
+                            Renovation Company
+                        </span> -->
+                        <h3 class="title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="800">
+                            {{ ('about us') | _  }}
+                        </h3>
+                    </div>
+                    <div class="main-content-area-about-p">
+                        <p class="disc">
+                            "Atlantis CG" MMC çoxprofilli təchizat sahələrini əsas götürərək, bu qəbildən olan çoxsahəli
+                            tikinti,
+                            təmir, dizayn, layihə, smeta, topdan və pərakəndə satış, xidmət və aidiyyəti sahələr üzrə
+                            fəaliyyət göstərir.
+                        </p>
+                        <div class="service-wrapper">
+                            <div class="left">
+                                <!-- ingle support -->
+                                <div class="single-service">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <p>Keyfiyyətli infrastruktur</p>
+                                </div>
+                                <!-- ingle support -->
+                                <!-- ingle support -->
+                                <div class="single-service">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <p>Müştəri məmnuniyyəti</p>
+                                </div>
+                                <!-- ingle support -->
+                            </div>
+
+                            <div class="right">
+                                <!-- ingle support -->
+                                <div class="single-service">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <p>Müasir standartlar</p>
+                                </div>
+                                <!-- ingle support -->
+                                <!-- ingle support -->
+                                <div class="single-service">
+                                    <i class="fa-regular fa-circle-check"></i>
+                                    <p>Peşəkar komanda</p>
+                                </div>
+                                <!-- ingle support -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="bg-text">
+            <h2 class="title">About Company</h2>
+        </div> -->
+    </div>
+</div>
+<!-- rts about area end -->
+
+<!-- rts service area start -->
+<!-- <div class="service-abot-area rts-section-gap service-about-bg bg_image">
+    <div class="container-210">
+        <div class="row align-items-center">
+            <div class="col-xl-6 col-lg-12  plr-sm">
+                <div class="thumbnail-service-about">
+                    <img src="{{ 'assets/images/service/13.webp' | theme }}" alt="service-image">
+                    <div class="vedio-icone">
+                        <a id="play-video" class="video-play-button" href="#">
+                            <span></span>
+                        </a>
+                        <div id="video-overlay" class="video-overlay">
+                            <a class="video-overlay-close">×</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-12 pading-controler">
+                <div class="service-about-wrapper">
+                    <div class="title-three-left">
+                        <span class="pre-title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="800"
+                            style="display: block;">
+                            Core Features
+                        </span>
+                        <h3 class="title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="800">
+                            Niyə biz?
+                        </h3>
+                    </div>
+                    <div class="row mt--15 g-24">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="single-service-sm">
+                                <div class="icon">
+                                    <img src="{{ 'assets/images/service/icon/01.svg' | theme }}" alt="">
+                                </div>
+                                <p>Peşəkar komanda</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="single-service-sm">
+                                <div class="icon">
+                                    <img src="{{ 'assets/images/service/icon/02.svg' | theme }}" alt="">
+                                </div>
+                                <p>Timely Delivery</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="single-service-sm">
+                                <div class="icon">
+                                    <img src="{{ 'assets/images/service/icon/03.svg' | theme }}" alt="">
+                                </div>
+                                <p>24/7 Support</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="single-service-sm">
+                                <div class="icon">
+                                    <img src="{{ 'assets/images/service/icon/04.svg' | theme }}" alt="">
+                                </div>
+                                <p>Best Equipment</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="single-service-sm">
+                                <div class="icon">
+                                    <img src="{{ 'assets/images/service/icon/05.svg' | theme }}" alt="">
+                                </div>
+                                <p>100% Guranty</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="single-service-sm">
+                                <div class="icon">
+                                    <img src="{{ 'assets/images/service/icon/06.svg' | theme }}" alt="">
+                                </div>
+                                <p>Timely Delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- rts service area end -->
+
+<!-- what we offer start -->
+<!-- <div class="rts-offer-provide-section rts-section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-mid-wrapper-home-two" data-sal="slide-up" data-sal-delay="150"
+                    data-sal-duration="800">
+                    <span class="pre">Our Services</span>
+                    <h2 class="title">What We Offer</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt--15 g-24">
+            <div class="col-lg-4">
+                <div class="rts-single-offer">
+                    <a href="{{ 'about/index' | page }}" class="thumbnail">
+                        <img src="{{ 'assets/images/service/07.webp' | theme }}" alt="service">
+                    </a>
+                    <div class="content-wrapper">
+                        <a href="{{ 'about/index' | page }}">
+                            <h5 class="title">
+                                General construction
+                            </h5>
+                        </a>
+                        <p class="disc">
+                            Dui lobortis scelerisque magna curabitur duis purus platea massa accumsan
+                        </p>
+                        <a href="{{ 'about/index' | page }}" class="rts-btn btn-transparent-service">View Services<i
+                                class="fa-light fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="rts-single-offer">
+                    <a href="{{ 'about/index' | page }}" class="thumbnail">
+                        <img src="{{ 'assets/images/service/08.webp' | theme }}" alt="service">
+                    </a>
+                    <div class="content-wrapper">
+                        <a href="{{ 'about/index' | page }}">
+                            <h5 class="title">
+                                Property maintenance
+                            </h5>
+                        </a>
+                        <p class="disc">
+                            Dui lobortis scelerisque magna curabitur duis purus platea massa accumsan
+                        </p>
+                        <a href="{{ 'about/index' | page }}" class="rts-btn btn-transparent-service">View Services<i
+                                class="fa-light fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="rts-single-offer">
+                    <a href="{{ 'about/index' | page }}" class="thumbnail">
+                        <img src="{{ 'assets/images/service/07.webp' | theme }}" alt="service">
+                    </a>
+                    <div class="content-wrapper">
+                        <a href="{{ 'about/index' | page }}">
+                            <h5 class="title">
+                                Virtual design & build
+                            </h5>
+                        </a>
+                        <p class="disc">
+                            Dui lobortis scelerisque magna curabitur duis purus platea massa accumsan
+                        </p>
+                        <a href="{{ 'about/index' | page }}" class="rts-btn btn-transparent-service">View Services<i
+                                class="fa-light fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- what we offer end -->
+
+<!-- rts fun facts area starts -->
+<!-- <div class="rts-about-fun-facts rts-section-gap bg_about-f">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="about-fun-facts-wrapper">
+                    <div class="single-funfacts-about">
+                        <div class="top">
+                            <div class="icon">
+                                <img src="{{ 'assets/images/fun-facts/icon/06.svg' | theme }}" alt="fun-facts">
+                            </div>
+                            <h2 class="title plus"><span class="counter">25</span></h2>
+                        </div>
+                        <p class="disc">
+                            Years of Experience. Urban design draws together the many standers of place-making
+                        </p>
+                    </div>
+                    <div class="single-funfacts-about">
+                        <div class="top">
+                            <div class="icon">
+                                <img src="{{ 'assets/images/fun-facts/icon/08.svg' | theme }}" alt="fun-facts">
+                            </div>
+                            <h2 class="title percent"><span class="counter">80</span></h2>
+                        </div>
+                        <p class="disc">
+                            Projects completed Successfully. Urban design draws together the many standers of
+                            place-making
+                        </p>
+                    </div>
+                    <div class="single-funfacts-about">
+                        <div class="top">
+                            <div class="icon">
+                                <img src="{{ 'assets/images/fun-facts/icon/09.svg' | theme }}" alt="fun-facts">
+                            </div>
+                            <h2 class="title plus"><span class="counter">100</span></h2>
+                        </div>
+                        <p class="disc">
+                            Team members for 24/7 Support. Urban design draws together the many standers of place-making
+                        </p>
+                    </div>
+                    <div class="single-funfacts-about">
+                        <div class="top">
+                            <div class="icon">
+                                <img src="{{ 'assets/images/fun-facts/icon/07.svg' | theme }}" alt="fun-facts">
+                            </div>
+                            <h2 class="title plus"><span class="counter">38</span></h2>
+                        </div>
+                        <p class="disc">
+                            Countries, We Worked. Urban design draws together the many standers of place-making
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container mt-5">
+    <div class="row g-24">
+        <div class="elecate-left-title sal-animate" data-sal="slide-up" data-sal-delay="150" data-sal-duration="800">
+            <h3 class="title animated fadeIn">{{ ('subsidiaries') | _ }}</h3>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+            <!-- single project area start -->
+            <div class="rts-single-project-one">
+                <img src="{{ 'assets/images/subsidiary.webp' | theme }}" alt="project" class="cursor-pointer mb-4">
+                <!-- <a href="{{ 'about/subsidiaries-info' | page }}" class="thumbnail"></a> -->
+                <div class="project-inner py-0 px-1">
+                    <h6 class="title cursor-pointer">“Pearl Service, “Pearl Light Supplier” MMC</h6>
+                    <!-- <a href="{{ 'about/subsidiaries-info' | page }}">
+                    </a>
+                    <p class="disc">
+                        Urabitur lobortis mauris placerat quam netus
+                        litora eros purus,
+                    </p>
+                    <a href="{{ 'about/subsidiaries-info' | page }}" class="rts-btn btn-seconday">{{ ('more') | _  }}</a> -->
+                </div>
+            </div>
+            <!-- single project area end -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+            <!-- single project area start -->
+            <div class="rts-single-project-one">
+                <img src="{{ 'assets/images/subsidiary2.webp' | theme }}" alt="project" class="cursor-pointer mb-4">
+                <!-- <a href="{{ 'about/subsidiaries-info' | page }}" class="thumbnail two">
+                </a> -->
+                <div class="project-inner py-0 px-1">
+                    <h6 class="title cursor-pointer">“Nur General Supplier” MMC</h6>
+                    <!-- <a href="{{ 'about/subsidiaries-info' | page }}">
+                    </a>
+                    <p class="disc">
+                        Urabitur lobortis mauris placerat quam netus
+                        litora eros purus,
+                    </p>
+                    <a href="{{ 'about/subsidiaries-info' | page }}" class="rts-btn btn-seconday">{{ ('more') | _ }}</a> -->
+                </div>
+            </div>
+            <!-- single project area end -->
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 col-12 mb-3">
+            <!-- single project area start -->
+            <div class="rts-single-project-one">
+                <img src="{{ 'assets/images/subsidiary3.webp' | theme }}" alt="project" class="cursor-pointer mb-4">
+                <!-- <a href="{{ 'about/subsidiaries-info' | page }}" class="thumbnail three"></a> -->
+                <div class="project-inner py-0 px-1">
+                    <h6 class="title cursor-pointer">“Cavanshiroglu Repair and Construction” MMC</h6>
+                    <!-- <a href="{{ 'about/subsidiaries-info' | page }}">
+                    </a>
+                    <p class="disc">
+                        Urabitur lobortis mauris placerat quam netus
+                        litora eros purus,
+                    </p>
+                    <a href="{{ 'about/subsidiaries-info' | page }}" class="rts-btn btn-seconday">{{ ('more') | _ }}</a> -->
+                </div>
+            </div>
+            <!-- single project area end -->
+        </div>
+    </div>
+</div>
+<!-- rts fun facts area end -->
+
+<!-- rts testimonials area start -->
+<!-- <div class="rts-testimonials-area rts-section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-wrapper-testimonials">
+
+                    <div class="swiper swiper-testimonials-1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonials-mian-wrapepr">
+                                    <div class="image-area">
+                                        <h4 class="title">
+                                            TRUSTED FROM OVER <br>
+                                            1,500 CLIENTS
+                                        </h4>
+                                        <div class="thumbnail">
+                                            <img src="{{ 'assets/images/testimonials/01.webp' | theme }}"
+                                                alt="testimonials">
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-right">
+                                        <h3 class="title">
+                                            The group at Baroque is unimaginably committed, educated, and supportive.
+                                            The completed item was delightful, and worth each penny. I would totally
+                                            suggest Baroque...
+                                        </h3>
+                                        <a href="#" class="name">Bargman ,<span>ENVATO LLC</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonials-mian-wrapepr">
+                                    <div class="image-area">
+                                        <h4 class="title">
+                                            TRUSTED FROM OVER <br>
+                                            1,500 CLIENTS
+                                        </h4>
+                                        <div class="thumbnail">
+                                            <img src="{{ 'assets/images/testimonials/01.webp' | theme }}"
+                                                alt="testimonials">
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-right">
+                                        <h3 class="title">
+                                            The group at Baroque is unimaginably committed, educated, and supportive.
+                                            The completed item was delightful, and worth each penny. I would totally
+                                            suggest Baroque...
+                                        </h3>
+                                        <a href="#" class="name">Bargman ,<span>ENVATO LLC</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonials-mian-wrapepr">
+                                    <div class="image-area">
+                                        <h4 class="title">
+                                            TRUSTED FROM OVER <br>
+                                            1,500 CLIENTS
+                                        </h4>
+                                        <div class="thumbnail">
+                                            <img src="{{ 'assets/images/testimonials/01.webp' | theme }}"
+                                                alt="testimonials">
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-right">
+                                        <h3 class="title">
+                                            The group at Baroque is unimaginably committed, educated, and supportive.
+                                            The completed item was delightful, and worth each penny. I would totally
+                                            suggest Baroque...
+                                        </h3>
+                                        <a href="#" class="name">Bargman ,<span>ENVATO LLC</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <div class="swiper-button-next"><i class="fa-regular fa-arrow-right"></i></div>
+                        <div class="swiper-button-prev"><i class="fa-regular fa-arrow-left"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- rts testimonials area end -->
+
+<!-- rts blog area start -->
+<!-- <div class="rts-blog-area rts-section-gapBottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="title-mid-wrapper-home-two" data-sal="slide-up" data-sal-delay="150"
+                    data-sal-duration="900">
+                    <span class="pre">Our latest Blog</span>
+                    <h2 class="title">Blog & Insights</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row g-24 mt--10">
+            <div class="col-lg-4">
+                <div class="blog-single-two-wrapper">
+                    <div class="image-area">
+                        <a href="{{ 'about/index' | page }}" class="thumbnail">
+                            <img src="{{ 'assets/images/blog/04.webp' | theme }}" alt="blog-image">
+                        </a>
+                        <div class="date-area">
+                            <div class="date">
+                                <span class="day">03</span>
+                                <span class="month">DEC</span>
+                            </div>
+                            <div class="year">
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <span class="pre-tag">
+                            Construction
+                        </span>
+                        <a href="{{ 'about/index' | page }}">
+                            <h5 class="title">
+                                One of the World Largest Passive
+                                House Buildings
+                            </h5>
+                        </a>
+                        <a href="{{ 'about/index' | page }}" class="btn-read-more-blog">Read Details <i
+                                class="fa-light fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-single-two-wrapper">
+                    <div class="image-area">
+                        <a href="{{ 'about/index' | page }}" class="thumbnail">
+                            <img src="{{ 'assets/images/blog/05.webp' | theme }}" alt="blog-image">
+                        </a>
+                        <div class="date-area">
+                            <div class="date">
+                                <span class="day">01</span>
+                                <span class="month">DEC</span>
+                            </div>
+                            <div class="year">
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <span class="pre-tag">
+                            Construction
+                        </span>
+                        <a href="{{ 'about/index' | page }}">
+                            <h5 class="title">
+                                Where the World Largest Passive
+                                House Buildings
+                            </h5>
+                        </a>
+                        <a href="{{ 'about/index' | page }}" class="btn-read-more-blog">Read Details <i
+                                class="fa-light fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog-single-two-wrapper">
+                    <div class="image-area">
+                        <a href="{{ 'about/index' | page }}" class="thumbnail">
+                            <img src="{{ 'assets/images/blog/06.webp' | theme }}" alt="blog-image">
+                        </a>
+                        <div class="date-area">
+                            <div class="date">
+                                <span class="day">07</span>
+                                <span class="month">DEC</span>
+                            </div>
+                            <div class="year">
+                                <span class="year">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <span class="pre-tag">
+                            Construction
+                        </span>
+                        <a href="{{ 'about/index' | page }}">
+                            <h5 class="title">
+                                Best the World Largest Passive
+                                House Buildings
+                            </h5>
+                        </a>
+                        <a href="{{ 'about/index' | page }}" class="btn-read-more-blog">Read Details <i
+                                class="fa-light fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
