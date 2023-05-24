@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ 'assets/images/fav.webp' | theme }}">
+    <title>Atlantis CG</title>
+
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="{{ 'assets/css/plugins/fontawesome-5.css' | theme }}">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="{{ 'assets/css/plugins/swiper.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/plugins/aos.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/plugins/unicons.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/plugins/metismenu.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/plugins/hover-revel.css' | theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/plugins/timepickers.min.css' | theme }}">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{{ 'assets/css/vendor/bootstrap.min.css' | theme }}">
+    <!-- main css -->
+    <link rel="stylesheet" href="{{ 'assets/css/style.css' | theme }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- pre loader start -->
+    <div id="elevate-load">
+        <div class="loader-wrapper">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- pre loader end -->
+
+    <!-- Price offer mdal -->
+    <div class="modal fade" id="priceoffer" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+        aria-labelledby="priceoffer" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-4">
+                    <h5 class="modal-title" id="priceoffer">{{ ('price offer') }}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-price">
+                        <form>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label>{{ ('services') }} *</label>
+                                        <select class="form-select form-select-lg mb-3 service-select mt-1"
+                                            aria-label=".form-select-lg services">
+                                            <option value="1" selected>{{ ('repair') }}</option>
+                                            <option value="2">{{ ('construction') }}</option>
+                                            <option value="3">{{ ('supply') }}</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-2">
+                                        <label class="form-label">{{ ('fullname') }} *</label>
+                                        <input type="name" class="form-control form-control-lg" name="fullname">
+                                    </div>
+                                    <div class="col-12 col-lg-6 mt-2">
+                                        <label class="form-label">{{ ('number') }} *</label>
+                                        <input type="name" class="form-control" name="number">
+                                    </div>
+                                    <div class="col-12 my-2">
+                                        <label>{{ ('notes') }} *</label>
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer align-items-center justify-content-center">
+                    <button type="button" class="btn-primary mt-4 offer-submit rts-btn">{{ ('send') }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-input-area">
+        <div class="container">
+            <div class="search-input-inner">
+                <div class="input-div">
+                    <input id="searchInput1" class="search-input" type="text" placeholder="Search by keyword or #">
+                    <button><i class="far fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="close" class="search-close-icon"><i class="far fa-times"></i></div>
+    </div>
+
+    <header class="heder-two header--sticky animated fadeIn" sal-animate" data-sal="slide-up" data-sal-delay="100"
+        data-sal-duration="500">
+        <div class="header-two-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-main-wrapper">
+                        <div class="logo-area">
+                            <a href="/" class="logo">
+                                <img src="{{ 'assets/images/logo/atlants.svg' | theme }}" alt="image-logo" width="300">
+                            </a>
+                        </div>
+                        <!-- header right start -->
+                        <div class="rts-header-right">
+                            <div class="menu-area d-lg-none" id="menu-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16"
+                                    fill="none">
+                                    <rect width="18" height="2" fill="#0C0A0A"></rect>
+                                    <rect y="7" width="18" height="2" fill="#0C0A0A"></rect>
+                                    <rect y="14" width="18" height="2" fill="#0C0A0A"></rect>
+                                </svg>
+                            </div>
+                            <!-- top header -->
+                            <div class="top">
+                                <div class="end-top">
+                                    <div class="single-info">
+                                        <div class="icon">
+                                            <i class="fa-thin fa-location-dot"></i>
+                                        </div>
+                                        <p>
+                                            {{ ('Baku city, Binagadi district, Agasadig Garaybeyli street 31') }}
+                                        </p>
+                                    </div>
+                                    <div class="single-info">
+                                        <div class="icon">
+                                            <i class="fa-regular fa-envelope"></i>
+                                        </div>
+                                        <a href="mailto:info@atlantiscg.az">info@atlantiscg.az</a>
+                                    </div>
+                                    <div class="single-info">
+                                        <div class="icon">
+                                            <i class="fa-brands fa-whatsapp mx-2" style="font-size: 19px;"></i>
+                                            <a href="https://web.whatsapp.com/send/?phone=994515366771&type=phone_number&app_absent=0"
+                                                target="_blank">
+                                                +994 51 536 67 71
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- top header end -->
+                            <!-- bottom header start -->
+                            <div class="bottom">
+                                <!-- header style two -->
+                                <!-- nav area start -->
+                                <div class="main-nav-desk nav-area">
+                                    <nav>
+                                        <ul>
+                                            <li>
+                                                <a class="nav-link" href="/">{{ ('home') | _ }}</a>
+                                            </li>
+                                            <li class="has-droupdown pages">
+                                                <a class="nav-link" href="#">{{ ('about us') | _}}</a>
+                                                <ul class="submenu inner-page">
+                                                    <li>
+                                                        <a href="{{ 'about/index' | page }}">{{ ('about') | _ }}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ 'quality-policy/index' }} | page">{{ ('quality
+                                                            policy') | _ }}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ 'labor-protection/index | page' }}">{{ ('labor
+                                                            protection') | _ }}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ 'ecology-protection/index' | page }}">{{ ('ecology
+                                                            protection') | _ }}</a>
+                                                    </li>
+                                                    <!-- <li>
+                                                        <a href="">{{ ('management') }}</a>
+                                                    </li> -->
+                                                    <li>
+                                                        <a href="{{ 'documents/index' | page }}">{{ ('documents') | _
+                                                            }}</a>
+                                                    </li>
+                                                    <li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-droupdown pages">
+                                                <a class="nav-link" href="#">{{ ('services') | _ }}</a>
+                                                <ul class="submenu inner-page">
+                                                    <li>
+                                                        <a href="{{ 'construction/index' | page }}">{{ ('construction')
+                                                            | _
+                                                            }}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ 'design/index' | page }}">{{ ('design and
+                                                            architecture') | _
+                                                            }}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ 'repair/index' | page }}">{{ ('repair') | _ }}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ 'melioservice/index' | page }}">{{ ('melioservice')
+                                                            | _
+                                                            }}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="{{ 'supply/index' | page }}">{{ ('supply') | _ }}</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!-- <li>
+                                                <a class="nav-link" href="">{{ ('projects')
+                                                    }}</a>
+                                            </li> -->
+                                            <li>
+                                                <a class="nav-link" href="{{ 'contact/index' | page }}">{{ ('contact
+                                                    us') | _
+                                                    }}</a>
+                                            </li>
+                                            <!-- <button type="button" data-bs-toggle="modal"
+                                                data-bs-target="#priceoffer"
+                                                class="rts-btn btn-seconday btn-transparent btn">
+                                                {{ ('price offer') }}
+                                            </button> -->
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- nav-area end -->
+                                <!-- header style two End -->
+                                <div class="right-area">
+                                    <div class="icon-area">
+                                        <!-- <div class="search" id="search">
+                                            <i class="fa-regular fa-magnifying-glass"></i>
+                                        </div>
+                                        <div class="cart cart-icon">
+                                            <i class="fa-regular fa-cart-shopping"></i>
+                                        </div> -->
+                                        {% partial "lang-switcher" %}
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- bottom header end -->
+                        </div>
+                        <!-- header right end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- side bar for desktop -->
+    <div id="side-bar" class="side-bar header-two">
+        <button class="close-icon-menu"><i class="far fa-times"></i></button>
+        <!-- inner menu area desktop start -->
+        <div class="inner-main-wrapper-desk">
+            <div class="thumbnail">
+                <img src="{{ 'assets/images/banner/04.webp' | theme }}" alt="elevate">
+            </div>
+            <div class="inner-content">
+                <h4 class="title">We Build Building and Great Constructive Homes.</h4>
+                <p class="disc">
+                    We successfully cope with tasks of varying complexity, provide long-term guarantees and regularly
+                    master new technologies.
+                </p>
+                <div class="footer">
+                    <h4 class="title">Got a project in mind?</h4>
+                    <a href="" class="rts-btn btn-seconday">Let's talk</a>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu area start -->
+        <div class="mobile-menu d-block d-xl-none">
+            <nav class="nav-main mainmenu-nav mt--30">
+                <ul class="mainmenu" id="mobile-menu-active">
+                    <li>
+                        <a href="/" class="main">{{ ('home') }}</a>
+                    </li>
+                    <li class="has-droupdown">
+                        <a href="#" class="main">{{ ('about us') }}</a>
+                        <ul class="submenu">
+                            <li>
+                                <a class="mobile-menu-link" href="">{{ ('about') }}</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-link" href="">{{ ('quality policy')
+                                    }}</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-link" href="">{{ ('labor
+                                    protection') }}</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-link" href="">{{ ('ecology
+                                    protection') }}</a>
+                            </li>
+                            <!-- <li>
+                                <a class="mobile-menu-link" href="">{{ ('management') }}</a>
+                            </li> -->
+                            <li>
+                                <a class="mobile-menu-link" href="">{{ ('documents') }}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-droupdown">
+                        <a href="#" class="main">{{ ('services') }}</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="" class="mobile-menu-link">{{ ('construction')
+                                    }}</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-link" href="">{{ ('design and
+                                    architecture') }}</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-link" href="">{{ ('repair') }}</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-link" href="">{{ ('melioservice')
+                                    }}</a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-link" href="">{{ ('supply') }}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="main">{{ ('projects') }}</a>
+                    </li>
+                    <li>
+                        <a href="" class="main">{{ ('contact us') }}</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="social-wrapper-one">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- mobile menu area end -->
+    </div>
+    <!-- header style two End -->
+    {% page %}
+
+    <!-- rts footer area start -->
+    <div class="rts-footer-area footer-one footer-bg bg_image">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- footer top -->
+                    <!-- <div class="footer-top-wrapper  ptb--80">
+                        <a href="#" class="logo-area" data-sal="zoom-in" data-sal-delay="150" data-sal-duration="800">
+                            <img src="{{ 'assets/images/logo/atlantis-cg-low-resolution-logo-color-on-transparent-background.svg' | theme }}"
+                                alt="blog-images">
+                        </a>
+                        <h4 class="title" data-sal="zoom-in" data-sal-delay="150" data-sal-duration="800">
+                            Subscribe Our Newsletter <br>
+                            For Latest Updates
+                        </h4>
+                        <div class="subscribe-area" data-sal="zoom-in" data-sal-delay="150" data-sal-duration="800">
+                            <form>
+                                <input type="email" name="email" placeholder="Email Address" required>
+                                <button class="rts-btn btn-primary">Subscribe</button>
+                            </form>
+                        </div>
+                    </div> -->
+                    <!-- footer top end -->
+                </div>
+            </div>
+            <div class="main-footer-one-area d-block py-5">
+                <div class="row">
+                    <div class="single-footer-inner col-4" data-sal="slide-up" data-sal-delay="150"
+                        data-sal-duration="800">
+                        <div class="body one">
+                            <h6 class="footer-title">
+                                {{ ('about us') }}
+                            </h6>
+                            <p class="disc">
+                                "Atlantis CG" MMC çoxprofilli təchizat sahələrini əsas götürərək, bu qəbildən olan
+                                çoxsahəli
+                                tikinti, təmir, dizayn, layihə, smeta, topdan və pərakəndə satış, xidmət və aidiyyəti
+                                sahələr üzrə fəaliyyət göstərir.
+                            </p>
+                            <!-- <div class="social-wrapper-one">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="single-footer-inner col-4" data-sal="slide-up" data-sal-delay="350"
+                        data-sal-duration="800">
+                        <div class="body">
+                            <h6 class="footer-title">
+                                {{ ('useful links') }}
+                            </h6>
+                            <div class="use-full-link-wrapper">
+                                <a href="" class="single">
+                                    <i class="fa-sharp fa-solid fa-right"></i>
+                                    {{ ('about') }}
+                                </a>
+                                <!-- <a href="" class="single">
+                                    <i class="fa-sharp fa-solid fa-right"></i>
+                                    {{ ('management') }}
+                                </a> -->
+                                <a href="" class="single">
+                                    <i class="fa-sharp fa-solid fa-right"></i>
+                                    {{ ('construction') }}
+                                </a>
+                                <a href="" class="single">
+                                    <i class="fa-sharp fa-solid fa-right"></i>
+                                    {{ ('supply') }}
+                                </a>
+                                <a href="" class="single">
+                                    <i class="fa-sharp fa-solid fa-right"></i>
+                                    {{ ('contact us') }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-footer-inner col-4" data-sal="slide-up" data-sal-delay="550"
+                        data-sal-duration="800">
+                        <div class="body">
+                            <h6 class="footer-title">
+                                {{ ('contact us') }}
+                            </h6>
+                            <div class="contactus-link-wrapper">
+                                <div class="single">
+                                    <div class="icon">
+                                        <i class="fa-sharp fa-solid fa-phone"></i>
+                                    </div>
+                                    <a href="#" class="number">
+                                        +994 51 536 67 71
+                                    </a>
+                                </div>
+                                <div class="single">
+                                    <div class="icon">
+                                        <i class="fa-brands fa-whatsapp" style="font-size: 14px;"></i>
+                                    </div>
+                                    <a href="https://web.whatsapp.com/send/?phone=994515366771&type=phone_number&app_absent=0"
+                                        class="number" target="_blank">
+                                        +994 51 536 67 71
+                                    </a>
+                                </div>
+                                <div class="single">
+                                    <div class="icon">
+                                        <i class="fa-sharp fa-regular fa-envelope"></i>
+                                    </div>
+                                    <a href="mailto:info@atlantiscg.az" class="number">
+                                        info@atlantiscg.az
+                                    </a>
+                                </div>
+                                <div class="single">
+                                    <div class="icon">
+                                        <i class="fa-light fa-location-dot"></i>
+                                    </div>
+                                    <a href="https://goo.gl/maps/maGQt9rTsmcHBNaP6" target="_blank"
+                                        class="number mt-dec">
+                                        {{ ('Baku city, Binagadi district, Agasadig Garaybeyli street 31') }}
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="wrapepr">
+                            <p>{{ ("© 2023 \"Atlantis CG\" LLC. All rights reserved.") }}</p>
+                            <p>
+                                Veb sayt <a href='https://in4tech.az/az/' target='_blank'
+                                    class='text-decoration-underline'>In4Tech LLC</a> tərəfindən hazırlanıb.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts footer area end -->
+
+    <!-- jquery js -->
+    <script src="{{ 'assets/js/plugins/jquery.min.js' | theme }}"></script>
+    <!-- jquery ui -->
+    <script src="{{ 'assets/js/vendor/jqueryui.js' | theme }}"></script>
+    <!-- counter up -->
+    <script src="{{ 'assets/js/plugins/counter-up.js' | theme }}"></script>
+    <script src="{{ 'assets/js/plugins/swiper.js' | theme }}"></script>
+    <!-- twinmax -->
+    <script src="{{ 'assets/js/vendor/twinmax.js' | theme }}"></script>
+    <!-- split text js -->
+    <script src="{{ 'assets/js/vendor/split-text.js' | theme }}"></script>
+    <!-- text plugins -->
+    <script src="{{ 'assets/js/plugins/text-plugins.js' | theme }}"></script>
+    <!-- metismenu js -->
+    <script src="{{ 'assets/js/plugins/metismenu.js' | theme }}"></script>
+    <!-- waypoint js -->
+    <script src="{{ 'assets/js/vendor/waypoint.js' | theme }}"></script>
+    <!-- waw -->
+    <script src="{{ 'assets/js/vendor/waw.js' | theme }}"></script>
+    <!-- aos js -->
+    <script src="{{ 'assets/js/plugins/aos.js' | theme }}"></script>
+    <!-- jquery ui js -->
+    <script src="{{ 'assets/js/plugins/jquery-ui.js' | theme }}"></script>
+    <!-- timepickers -->
+    <script src="{{ 'assets/js/plugins/jquery-timepicker.js' | theme }}"></script>
+    <!-- sal animation -->
+    <script src="{{ 'assets/js/vendor/sal.min.js' | theme }}"></script>
+    <!-- bootstrap JS -->
+    <script src="{{ 'assets/js/plugins/popper.min.js' | theme }}"></script>
+    <script src="{{ 'assets/js/plugins/bootstrap.min.js' | theme }}"></script>
+    <!-- easing JS -->
+    <script src="{{ 'assets/js/plugins/jquery-slideNav.js' | theme }}"></script>
+    <!-- easing JS -->
+    <script src="{{ 'assets/js/plugins/hover-revel.js' | theme }}"></script>
+    <!-- contact form js -->
+    <script src="{{ 'assets/js/plugins/contact-form.js' | theme }}"></script>
+    <!-- main js -->
+    <script src="{{ 'assets/js/main.js' | theme }}"></script>
+    <!-- swip image -->
+    <script src="{{ 'assets/js/plugins/swip-img.js' | theme }}"></script>
+    <!-- header style two End -->
+</body>
+
+</html>

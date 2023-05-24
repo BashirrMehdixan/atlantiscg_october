@@ -1,0 +1,18 @@
+<div class="lang-switcher d-none d-sm-block dropdown">
+    <button class="text-uppercase has-dropdown d-flex" data-bs-toggle="dropdown">
+        <i class="fa-solid fa-globe"></i>
+    </button>
+    <div class="dropdown-menu dropdown-menu-end">
+        <ul>
+            {{-- TODO:: Fix output of loop variables // chech frontend --}}
+            @foreach (LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+            <li>
+                <a class="text-uppercase list-style-type-none" rel="alternate" hreflang="{{ $localeCode }}"
+                    href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                    {{ $properties['native'] }}
+                </a>
+            </li>
+            @endforeach
+        </ul>
+    </div>
+</div>
