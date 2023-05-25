@@ -1,4 +1,62 @@
-url = "/documents/index"
-title = "Documents"
+url = "/documents"
 layout = "main"
+title = "Documents"
 ==
+<!-- Bread-Crumb style two -->
+<!-- rts breadcrumba area start -->
+<div class="rts-bread-crumb-area ptb--150 ptb_sm--100 bg-breadcrumb bg_image">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- bread crumb inner wrapper -->
+                <div class="breadcrumb-inner text-center">
+                    <h1 class="title">{{ ('documents') | _ }}</h1>
+                    <div class="meta">
+                    </div>
+                </div>
+                <!-- bread crumb inner wrapper end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- rts breadcrumba area end -->
+<!-- Bread-Crumb style two End -->
+<div class="container-fluid my-5">
+    <div class="rts-single-wized download service">
+        <div class="elecate-left-title sal-animate" data-sal="slide-up" data-sal-delay="150" data-sal-duration="800">
+            <h3 class="title animated fadeIn">{{ ('documents') | _ }}</h3>
+        </div>
+        <div class="wized-body">
+            <!-- single downlaod area start -->
+            <div class="single-download-area">
+                <img src="{{ 'assets/images/service/icon/pdf.svg' | theme }}" width="24" height="32"
+                    alt="Business_downlaod">
+                <div class="mid">
+                    <h6 class="title">
+                        Our Brochures
+                    </h6>
+                    <span>Downlaod</span>
+                </div>
+                <a class=" rts-btn btn-primary" href="#" download>
+                    <i class="fal fa-arrow-right"></i>
+                </a>
+            </div>
+            <!-- single downlaod area End -->
+            <!-- single downlaod area start -->
+            <div class="single-download-area">
+                <img src="{{ 'assets/images/service/icon/pdf.svg' | theme }}" width="24" height="32"
+                    alt="Business_downlaod">
+                <div class="mid">
+                    <h6 class="title">
+                        Company Details
+                    </h6>
+                    <span>Downlaod</span>
+                </div>
+                <a class=" rts-btn btn-primary" href="#" download>
+                    <i class="fal fa-arrow-right"></i>
+                </a>
+            </div>
+            <!-- single downlaod area End -->
+        </div>
+    </div>
+</div>

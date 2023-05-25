@@ -1,4 +1,131 @@
-url = "/contact/index"
-title = "Contact"
-layout= "main"
+url = "/contact"
+layout = "main"
+title = "Contact us"
 ==
+<div class="rts-bread-crumb-area ptb--150 ptb_sm--100 bg-breadcrumb bg_image">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- bread crumb inner wrapper -->
+                <div class="breadcrumb-inner text-center">
+                    <h1 class="title">{{ ('contact us') | _ }}</h1>
+                    <div class="meta">
+                    </div>
+                </div>
+                <!-- bread crumb inner wrapper end -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="rts-contact-area-m rts-section-gap">
+    <div class="container">
+        <div class="row g-24">
+            <div class="contact-text">
+                <h4>
+                    Keyfiyyətli təmir, tikinti və digər xidmətlər üçün bizimlə əlaqə saxlayın
+                </h4>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="single-contact-one-inner">
+                    <div class="content contact-info">
+                        <div class="icone">
+                            <img src="{{ 'assets/images/contact/shape/02.svg' | theme }}" alt="">
+                        </div>
+                        <div class="info">
+                            <span>{{ ("phone") | _ }}</span>
+                            <a href="tel:+994515366771">
+                                <h5>+994 51 536 67 71</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="single-contact-one-inner">
+                    <div class="content info">
+                        <div class="icone">
+                            <img src="{{ 'assets/images/contact/shape/01.svg' | theme }}" alt="">
+                        </div>
+                        <div class="info">
+                            <span>{{ ("email") | _ }}</span>
+                            <a href="mailto:info@atlantiscg.az">
+                                <h5>info@atlantiscg.az</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="single-contact-one-inner">
+                    <div class="content">
+                        <div class="icone">
+                            <img src="{{ 'assets/images/contact/shape/03.svg' | theme }}" alt="">
+                        </div>
+                        <div class="info">
+                            <span>Ünvan</span>
+                            <a href="https://goo.gl/maps/maGQt9rTsmcHBNaP6" target="_blank">
+                                <p class="fw-semibold text-dark">
+                                    {{ ("31 Agasadig Garaybeyli Street, Binagadi District") | _ }}
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="rts-contact-page-form-area contact-2 rts-section-gapBottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.7416571367917!2d49.846745574981774!3d40.41457355577226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403087fa5a3ff0b1%3A0xb0389ec19bcdd3f5!2zMzEgQcSfYXNhZMSxcSBHyZlyYXliyZl5bGksIEJha8SxIDEwMjU!5e0!3m2!1sen!2saz!4v1684485105413!5m2!1sen!2saz"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6">
+                <div class="mian-wrapper-form py-5">
+                    <div class="title-mid-wrapper-home-two sal-animate" data-sal="slide-up" data-sal-delay="150"
+                        data-sal-duration="800">
+                        <h3 class="title">{{ ('contact us') | _ }}</h3>
+                    </div>
+                    <form id="contact" action="#" class="appoinment-form mt--40">
+                        <div class="input-half-wrapper row">
+                            <div class="single-input col-12 col-lg-6 mb-3">
+                                <input type="text" placeholder="{{ ('your name') | _ }} *" required="">
+                            </div>
+                            <div class="single-input col-12 col-lg-6 mb-3">
+                                <input type="text" placeholder="{{ ('your surname') | _ }} *" required="">
+                            </div>
+                            <div class="single-input col-12 col-lg-6 mb-3">
+                                <input type="text" placeholder="{{ ('your phone') | _ }} *" required="">
+                            </div>
+                            <div class="single-input col-12 col-lg-6 mb-3">
+                                <input type="email" placeholder="{{ ('email address') | _ }} *" required="">
+                            </div>
+                            <div class="single-input col-12 col-lg-6 mb-3">
+                                <input type="text" placeholder="{{ ('company name') | _ }}" required="">
+                            </div>
+                            <div class="single-input col-12 col-lg-6 mb-3">
+                                <input type="text" placeholder="{{ ('position') | _ }}" required="">
+                            </div>
+
+                        </div>
+                        <select class="mb-4">
+                            <option value="construction">{{ ('construction') | _ }}</option>
+                            <option value="repair">{{ ('repair') | _ }}</option>
+                            <option value="design and architecture">{{ ('design and architecture') | _ }}</option>
+                            <option value="supply">{{ ('supply') | _ }}</option>
+                        </select>
+                        <textarea class="form-control col-12 mb--30" id="message" name="message"
+                            placeholder="{{ ('enter message') | _ }}" required=""></textarea>
+                        <button type="submit" class="rts-btn btn-primary">{{ ('send') | _ }}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
