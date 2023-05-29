@@ -1,0 +1,9 @@
+fields:
+    header:
+        label: Header
+        span: full
+        type: text
+    description:
+        label: Description
+        span: full
+        type: text

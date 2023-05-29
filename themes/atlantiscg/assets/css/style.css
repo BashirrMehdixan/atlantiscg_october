@@ -21249,10 +21249,51 @@ edit .quantity-edit button {
     z-index: -1;
 }
 
+.bg_about {
+    background-image: url("../images/breadcrumbs/about.webp");
+}
+
+.bg_construction {
+    background-image: url("../images/breadcrumbs/construction.webp");
+}
+
+.bg_contact {
+    background-image: url("../images/breadcrumbs/contact-us2.webp");
+}
+
+.bg_design {
+    background-image: url("../images/breadcrumbs/breadcrumb.webp");
+}
+
+.bg_documents {
+    background-image: url("../images/breadcrumbs/documents.webp");
+}
+
+.bg_ecology {
+    background-image: url("../images/breadcrumbs/ecology.webp");
+}
+
+.bg_labor {
+    background-image: url("../images/breadcrumbs/labor-protection.webp");
+}
+
+.bg_melioservice {
+    background-image: url("../images/breadcrumbs/melioservice.webp");
+}
+
+.bg_quality {
+    background-image: url("../images/breadcrumbs/quality-policy.webp");
+}
+.bg_repair {
+    background-image: url("../images/breadcrumbs/repair-2.webp");
+}
+.bg_supply {
+    background-image: url("../images/breadcrumbs/supply-3.webp");
+}
 .breadcrumb-inner .title {
     font-weight: 600;
     font-size: 60px;
-    line-height: 80px;
+    line-height: 110px;
     color: #fff;
 }
 
@@ -21295,9 +21336,11 @@ edit .quantity-edit button {
     left: 0;
     transition: 0.3s;
 }
+
 .breadcrumb-item.active {
     color: var(--color-primary);
 }
+
 .breadcrumb-inner .meta a:hover {
     color: var(--color-primary);
 }

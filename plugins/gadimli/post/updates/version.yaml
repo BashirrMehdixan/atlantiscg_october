@@ -1,0 +1,11 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table gadimli_post_create'
+    - builder_table_create_gadimli_post_create.php
+v1.0.3:
+    - 'Updated table gadimli_post_create'
+    - builder_table_update_gadimli_post_create.php
+v1.0.4:
+    - 'Drop table gadimli_post_create'
+    - builder_table_delete_gadimli_post_create.php

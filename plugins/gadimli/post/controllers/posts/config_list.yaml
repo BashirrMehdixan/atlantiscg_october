@@ -1,0 +1,12 @@
+list: $/gadimli/post/models/post/columns.yaml
+modelClass: Gadimli\Post\Models\Post
+title: Posts
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'gadimli/post/posts/update/:id'

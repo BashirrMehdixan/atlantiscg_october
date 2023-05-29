@@ -1,0 +1,10 @@
+name: Posts
+form: $/gadimli/post/models/post/fields.yaml
+modelClass: Gadimli\Post\Models\Post
+defaultRedirect: gadimli/post/posts
+create:
+    redirect: 'gadimli/post/posts/update/:id'
+    redirectClose: gadimli/post/posts
+update:
+    redirect: gadimli/post/posts
+    redirectClose: gadimli/post/posts

@@ -1,10 +1,14 @@
-url = "/about"
+url = "/haqqimizda"
 layout = "main"
-title = "About"
+title = "Atlantis CG"
+
+[viewBag]
+localeUrl[en] = "about"
+localeTitle[en] = "Atlantis CG"
 ==
 <!-- Bread-Crumb style two -->
 <!-- rts breadcrumba area start -->
-<div class="rts-bread-crumb-area ptb--150 ptb_sm--100 bg-breadcrumb bg_image">
+<div class="rts-bread-crumb-area ptb--150 ptb_sm--100 bg-breadcrumb bg_image bg_about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -41,7 +45,7 @@ title = "About"
                             Renovation Company
                         </span> -->
                         <h3 class="title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="800">
-                            {{ ('about us') | _  }}
+                            {{ ('about us') | _ }}
                         </h3>
                     </div>
                     <div class="main-content-area-about-p">
