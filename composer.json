@@ -11,7 +11,6 @@
         "october/all": "^3.3",
         "rainlab/translate-plugin": "^2.2",
         "october/drivers-plugin": "^2.0",
-        "janvince/smallcontactform-plugin": "^1.63",
         "rainlab/pages-plugin": "^1.5",
         "rainlab/builder-plugin": "^2.0",
         "indikator/backend-plugin": "^1.6",
