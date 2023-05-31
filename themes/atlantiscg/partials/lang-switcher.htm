@@ -1,0 +1,17 @@
+{% if sitePicker.isEnabled %}
+<li class="nav-item dropdown lang-switecher" style="list-style-type: none;">
+    <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="true">
+        <i class="fa-solid fa-globe"></i>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        {% for site in sitePicker.sites %}
+        <li>
+            <a class="dropdown-item {{ this.site.code == site.code ? 'active' }}" href="{{ site.url }}">
+                {{ site.name }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</li>
+{% endif %}

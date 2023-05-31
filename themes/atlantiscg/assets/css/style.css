@@ -21284,12 +21284,15 @@ edit .quantity-edit button {
 .bg_quality {
     background-image: url("../images/breadcrumbs/quality-policy.webp");
 }
+
 .bg_repair {
     background-image: url("../images/breadcrumbs/repair-2.webp");
 }
+
 .bg_supply {
     background-image: url("../images/breadcrumbs/supply-3.webp");
 }
+
 .breadcrumb-inner .title {
     font-weight: 600;
     font-size: 60px;
@@ -36026,4 +36029,14 @@ form.appoinment-form textarea:focus {
 .main-working-hours i {
     color: #fff;
     font-size: 50px;
+}
+
+.lang-switcher a:hover {
+    background-color: #fff;
+    color: var(--color-primary);
+}
+
+.lang-switcher a.dropdown-item.active {
+    background-color: #fff;
+    color: var(--color-primary);
 }

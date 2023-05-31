@@ -14,7 +14,8 @@
         "janvince/smallcontactform-plugin": "^1.63",
         "rainlab/pages-plugin": "^1.5",
         "rainlab/builder-plugin": "^2.0",
-        "indikator/backend-plugin": "^1.6"
+        "indikator/backend-plugin": "^1.6",
+        "panakour/translate-plugin": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5|^9.0"
