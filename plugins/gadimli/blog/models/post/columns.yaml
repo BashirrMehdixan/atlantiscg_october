@@ -1,12 +1,8 @@
 # ===================================
-#  Form Field Definitions
+#  List Column Definitions
 # ===================================
 
-fields:
+columns:
     id:
         label: ID
-        disabled: false
-
-    name:
-        label: Header
-
+        searchable: true

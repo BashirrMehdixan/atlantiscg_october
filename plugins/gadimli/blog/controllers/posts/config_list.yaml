@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/gadimli/posts/models/post/columns.yaml
+list: $/gadimli/blog/models/post/columns.yaml
 
 # Model Class name
-modelClass: Gadimli\Posts\Models\Post
+modelClass: Gadimli\Blog\Models\Post
 
 # List Title
 title: Manage Posts
 
 # Link URL for each record
-recordUrl: gadimli/posts/posts/update/:id
+recordUrl: gadimli/blog/posts/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records

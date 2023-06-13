@@ -1,5 +1,5 @@
 {
-    "name": "gadimli/posts-plugin",
+    "name": "gadimli/blog-plugin",
     "type": "october-plugin",
     "description": "No description provided yet...",
     "require": {

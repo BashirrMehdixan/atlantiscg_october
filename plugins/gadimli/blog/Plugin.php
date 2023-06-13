@@ -1,4 +1,4 @@
-<?php namespace Gadimli\Posts;
+<?php namespace Gadimli\Blog;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -16,7 +16,7 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'Posts',
+            'name' => 'Blog',
             'description' => 'No description provided yet...',
             'author' => 'gadimli',
             'icon' => 'icon-leaf'
@@ -47,7 +47,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'Gadimli\Posts\Components\MyComponent' => 'myComponent',
+            'Gadimli\Blog\Components\MyComponent' => 'myComponent',
         ];
     }
 
@@ -59,8 +59,8 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'gadimli.posts.some_permission' => [
-                'tab' => 'posts',
+            'gadimli.blog.some_permission' => [
+                'tab' => 'Blog',
                 'label' => 'Some permission'
             ],
         ];
@@ -71,12 +71,13 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
+
         return [
-            'posts' => [
-                'label' => 'Posts',
-                'url' => Backend::url('gadimli/posts/posts'),
+            'blog' => [
+                'label' => 'Blog',
+                'url' => Backend::url('gadimli/blog/posts'),
                 'icon' => 'icon-leaf',
-                'permissions' => ['gadimli.posts.*'],
+                'permissions' => ['gadimli.blog.*'],
                 'order' => 500,
             ],
         ];

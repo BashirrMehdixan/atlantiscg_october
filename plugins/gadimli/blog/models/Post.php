@@ -1,4 +1,4 @@
-<?php namespace Gadimli\Posts\Models;
+<?php namespace Gadimli\Blog\Models;
 
 use Model;
 
@@ -14,7 +14,7 @@ class Post extends Model
     /**
      * @var string table name
      */
-    public $table = 'gadimli_posts_posts';
+    public $table = 'gadimli_blog_posts';
 
     /**
      * @var array rules for validation
