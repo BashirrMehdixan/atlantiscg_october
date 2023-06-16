@@ -6,9 +6,9 @@ columns:
     id:
         label: ID
         searchable: true
-    header:
-        label: Header
+    title:
+        label: Title
         searchable: true
-    content:
-        label: Content
+    description:
+        label: Description
         searchable: true

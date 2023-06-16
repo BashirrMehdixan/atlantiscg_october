@@ -1,4 +1,4 @@
-<?php namespace Gadimli\Blog\Updates;
+<?php namespace Gadimli\About\Updates;
 
 use Schema;
 use October\Rain\Database\Schema\Blueprint;
@@ -16,10 +16,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('gadimli_blog_posts', function(Blueprint $table) {
+        Schema::create('gadimli_about_posts', function(Blueprint $table) {
             $table->id();
-            $table->string('header');
-            $table->string('content');
+            $table->string('title');
+            $table->string('description');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('gadimli_blog_posts');
+        Schema::dropIfExists('gadimli_about_posts');
     }
 };

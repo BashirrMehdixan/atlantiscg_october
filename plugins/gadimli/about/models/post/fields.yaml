@@ -3,8 +3,8 @@
 # ===================================
 
 fields:
-    header:
-        label: Header
-    content:
-        label: Content
+    title:
+        label: Title
+    description:
+        label: Description
         type: richeditor
