@@ -1,6 +1,6 @@
 <div data-control="toolbar">
     <a
-        href="<?= Backend::url('gadimli/blog/posts/create') ?>"
+        href="<?= Backend::url('gadimli/posts/posts/create') ?>"
         class="btn btn-primary oc-icon-plus">
         <?= e(trans('backend::lang.list.create_button', ['name'=>'Post'])) ?>
     </a>

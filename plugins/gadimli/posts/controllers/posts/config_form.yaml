@@ -6,25 +6,25 @@
 name: Post
 
 # Model Form Field configuration
-form: $/gadimli/blog/models/post/fields.yaml
+form: $/gadimli/posts/models/post/fields.yaml
 
 # Model Class name
-modelClass: Gadimli\Blog\Models\Post
+modelClass: Gadimli\Posts\Models\Post
 
 # Default redirect location
-defaultRedirect: gadimli/blog/posts
+defaultRedirect: gadimli/posts/posts
 
 # Create page
 create:
     title: backend::lang.form.create_title
-    redirect: gadimli/blog/posts/update/:id
-    redirectClose: gadimli/blog/posts
+    redirect: gadimli/posts/posts/update/:id
+    redirectClose: gadimli/posts/posts
 
 # Update page
 update:
     title: backend::lang.form.update_title
-    redirect: gadimli/blog/posts
-    redirectClose: gadimli/blog/posts
+    redirect: gadimli/posts/posts
+    redirectClose: gadimli/posts/posts
 
 # Preview page
 preview:

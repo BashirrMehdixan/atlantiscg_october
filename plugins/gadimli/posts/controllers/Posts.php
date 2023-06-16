@@ -1,4 +1,4 @@
-<?php namespace Gadimli\Blog\Controllers;
+<?php namespace Gadimli\Posts\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
@@ -28,7 +28,7 @@ class Posts extends Controller
     /**
      * @var array required permissions
      */
-    public $requiredPermissions = ['gadimli.blog.posts'];
+    public $requiredPermissions = ['gadimli.posts.posts'];
 
     /**
      * __construct the controller
@@ -37,6 +37,6 @@ class Posts extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Gadimli.Blog', 'blog', 'posts');
+        BackendMenu::setContext('Gadimli.Posts', 'posts', 'posts');
     }
 }
