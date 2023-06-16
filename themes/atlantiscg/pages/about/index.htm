@@ -17,8 +17,6 @@ localeTitle[en] = "Atlantis CG"
                 <!-- bread crumb inner wrapper -->
                 <div class="breadcrumb-inner text-center">
                     <h1 class="title">{{ ('about') | _ }}</h1>
-                    <div class="meta">
-                    </div>
                 </div>
                 <!-- bread crumb inner wrapper end -->
             </div>
@@ -28,6 +26,12 @@ localeTitle[en] = "Atlantis CG"
 <!-- rts breadcrumba area end -->
 <!-- Bread-Crumb style two End -->
 <!-- rts about area start -->
+
+<ul>
+    {% for file in files %}
+        <li>{{ file }}</li>
+    {% endfor %}
+</ul>
 <div class="rts-about-area-about rts-section-gap">
     <div class="container pb--45 plr_sm--15">
         <div class="row">
@@ -46,11 +50,8 @@ localeTitle[en] = "Atlantis CG"
                             Renovation Company
                         </span> -->
                         <h3 class="title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="800">
-                        {{ ('about us') | _ }}
+                            {{ ('about us') | _ }}
                         </h3>
-                        {% for post in posts %}
-                        <h3>{{ post.title }}</h3>
-                        {% endfor %}
                     </div>
                     <div class="main-content-area-about-p">
                         <p class="disc">
