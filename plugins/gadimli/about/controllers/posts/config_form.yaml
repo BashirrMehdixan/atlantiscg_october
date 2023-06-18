@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Post
+
+# Model Form Field configuration
+form: $/gadimli/about/models/post/fields.yaml
+
+# Model Class name
+modelClass: Gadimli\About\Models\Post
+
+# Default redirect location
+defaultRedirect: gadimli/about/posts
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: gadimli/about/posts/update/:id
+    redirectClose: gadimli/about/posts
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: gadimli/about/posts
+    redirectClose: gadimli/about/posts
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

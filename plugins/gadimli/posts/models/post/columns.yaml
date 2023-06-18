@@ -1,0 +1,20 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+<<<<<<< HEAD:plugins/gadimli/blog/models/post/columns.yaml
+    header:
+        label: Header
+        searchable: true
+    content:
+        label: Content
+        searchable: true
+=======
+    description:
+        label: Header
+        searchable: true
+>>>>>>> parent of f27e659 (created blog plugin):plugins/gadimli/posts/models/post/columns.yaml
